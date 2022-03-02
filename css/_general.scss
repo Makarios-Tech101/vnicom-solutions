@@ -17,8 +17,12 @@ body{
     width: 100%;
     background: rgba($color: #010336, $alpha: 0.2);
 }
-header,section{
+header{
     padding: 20px 5%;
+}
+section{
+    padding: 8% 5%;
+    margin-bottom: 70px;
 }
 a{
     color: $darkerBlue;
@@ -27,8 +31,14 @@ a{
 h1{
     font-size: 4.2em;
 }
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.5em;
+}
 p{
-    font-size: 18px;
+    font-size: 20px;
 }
 button{
     display: none;
@@ -36,6 +46,9 @@ button{
     outline: none;
     border: none;
     cursor: pointer;
+}
+img{
+    width: 100%;
 }
 #btn-action{
     padding: 15px 35px;

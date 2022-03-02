@@ -1,0 +1,45 @@
+section#about{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+
+    background: $white;
+   
+    #image{
+        margin-right: 5%;
+        width: 45%;
+    }
+    #intro{
+        width: 55%;
+
+        h3{
+            margin-bottom: 100px;
+        }
+
+        p{
+            letter-spacing: 1px;
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    section#about{
+    justify-content: center;
+    flex-direction: column;
+   
+    #image{
+        width: 65%;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+    #intro{
+        width: 100%;
+        text-align: center;
+
+        h3{
+            margin-bottom: 50px;
+        }
+    }
+    }
+}
