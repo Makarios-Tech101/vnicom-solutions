@@ -1,0 +1,58 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins";
+    font-size: 18px;
+    color: $darkerBlue;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+}
+
+body{
+    width: 100%;
+    background: rgba($color: #010336, $alpha: 0.2);
+}
+header,section{
+    padding: 20px 5%;
+}
+a{
+    color: $darkerBlue;
+    font-weight: 500;
+}
+h1{
+    font-size: 4.2em;
+}
+p{
+    font-size: 18px;
+}
+button{
+    display: none;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+#btn-action{
+    padding: 15px 35px;
+    color: $white;
+    text-decoration: none;
+    border-radius: 10px;
+    user-select: none;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+
+@media screen and (max-width:760px) {
+    header,section{
+        padding: 20px 3%;
+    }
+    h1{
+        font-size: 3em;
+    }
+}

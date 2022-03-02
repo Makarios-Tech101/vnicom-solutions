@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins";
+  font-size: 18px;
+  color: #010336;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  background: rgba(1, 3, 54, 0.2);
+}
+
+header, section {
+  padding: 20px 5%;
+}
+
+a {
+  color: #010336;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 4.2em;
+}
+
+p {
+  font-size: 18px;
+}
+
+button {
+  display: none;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#btn-action {
+  padding: 15px 35px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+@media screen and (max-width: 760px) {
+  header, section {
+    padding: 20px 3%;
+  }
+  h1 {
+    font-size: 3em;
+  }
+}
+
+header {
+  width: 100%;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav #logo {
+  width: 25%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+}
+
+header button {
+  width: 50px;
+  height: 50px;
+}
+
+header button img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  header nav ul {
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    z-index: 5;
+    background: #ffffff;
+    width: 30%;
+    height: 90vh;
+    opacity: 0;
+    padding: 100px 6%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style: none;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+  }
+  header nav ul li {
+    margin-bottom: 40px;
+  }
+  header nav ul li a {
+    text-decoration: none;
+  }
+  header button {
+    display: block;
+  }
+  header .show {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+section#welcome {
+  height: 80vh;
+  position: relative;
+}
+
+section#welcome #dots-fade {
+  position: absolute;
+  top: 40px;
+  z-index: -3;
+  width: 20%;
+}
+
+section#welcome #welcome-dots {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  z-index: 3;
+  width: 35%;
+}
+
+section#welcome #intro {
+  width: 63%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section#welcome #intro h1 {
+  margin-top: 30px;
+}
+
+section#welcome #intro #intro-note {
+  margin: 40px 0px;
+  width: 80%;
+}
+
+section#welcome #intro #btn-action {
+  display: inline-block;
+  background-color: #010336;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1140px) {
+  section#welcome #welcome-dots {
+    display: none;
+  }
+  section#welcome #intro {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section#welcome #welcome-dots {
+    display: none;
+  }
+  section#welcome #intro {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#welcome #intro h1 {
+    margin: 20px 0px;
+    margin-top: 60px;
+    text-align: center;
+  }
+  section#welcome #intro #intro-note {
+    margin: 30px 0px;
+    text-align: center;
+  }
+  section#welcome #intro #btn-action {
+    display: inline-block;
+    background-color: #010336;
+    margin-top: 60px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
