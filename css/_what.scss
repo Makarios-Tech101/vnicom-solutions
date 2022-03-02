@@ -1,0 +1,117 @@
+section#what-we-do{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    #header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3{
+            width: 60%;
+        }
+        div{
+            a{
+                color: $lightBlue;
+            }
+        }
+    }
+
+    #bg{
+        width: 100%;
+        height: 120vh;
+        background: rgba($color: #010336, $alpha: 0.1);
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        top: 420px;
+    }
+
+    #container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 80px;
+
+        #box{
+            width: 45%;
+            box-shadow: 0px 6px 24px $lightGrey;
+            border-radius: 30px;
+            margin-bottom: 50px;
+            padding: 70px 40px;
+            background: $white;
+
+            img{
+                width: 25%;
+            }
+
+            h4{
+                margin: 20px 0px;
+                font-weight: 500;
+            }
+            p{
+                height: 140px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    section#what-we-do{
+
+    #header{
+        h3{
+            width: 70%;
+        }
+    }
+
+    #container{
+        #box{
+            width: 47%;
+
+            img{
+                width: 35%;
+            }
+
+            h4{
+                height: 40px;
+                margin: 30px 0px;
+            }
+            p{
+                height: 170px;
+            }
+        }
+    }
+    }
+}
+
+@media screen and (max-width:750px) {
+    section#what-we-do{
+    #header{
+        h3{
+            width: 90%;
+            text-align: center;
+        }
+        
+        div{
+            display: none;
+        }
+    }
+
+    #bg{
+        height: 310vh;
+    }
+
+    #container{
+        justify-content: center;
+        align-content: center;
+
+        #box{
+            width: 90%;
+        }
+    }
+    }
+}

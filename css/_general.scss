@@ -4,7 +4,7 @@
     padding: 0px;
     margin: 0px;
     font-family: "Poppins";
-    font-size: 18px;
+    font-size: 17px;
     color: $darkerBlue;
     box-sizing: border-box;
 }
@@ -15,30 +15,40 @@ html{
 
 body{
     width: 100%;
-    background: rgba($color: #010336, $alpha: 0.2);
+    background: $white;
 }
 header{
     padding: 20px 5%;
 }
 section{
-    padding: 8% 5%;
-    margin-bottom: 70px;
+    padding: 10% 5%;
+    margin-top: 50px;
 }
 a{
     color: $darkerBlue;
     font-weight: 500;
+    text-decoration: none;
+    color: inherit;
 }
 h1{
-    font-size: 4.2em;
+    font-size: 3.8em;
 }
 h2{
     font-size: 2em;
 }
 h3{
     font-size: 1.5em;
+    font-weight: 550;
+}
+h4{
+    font-size: 1.2em;
+}
+h5{
+    font-size: 1.1em;
+    font-weight: 500;
 }
 p{
-    font-size: 20px;
+    font-size: 17px;
 }
 button{
     display: none;

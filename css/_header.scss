@@ -2,6 +2,7 @@
 
 header{
     width:100%;
+    background: rgba($color: #010336, $alpha: 0.1);
 
     nav{
         display: flex;
@@ -19,13 +20,13 @@ header{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 60%;
+            width: 45%;
 
             list-style: none;
 
             li{
                 a{
-                    text-decoration: none;
+                    font-weight: 600;
                 }
 
             }
