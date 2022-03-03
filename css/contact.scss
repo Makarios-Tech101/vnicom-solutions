@@ -1,58 +1,116 @@
+@import 'variables';
 footer{
     #wrapper{
-        margin-top: 0px;
+        margin-top: 0px !important;
     }
 }
 
 section#contact{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+    padding: 5% 10%;
+    background: linear-gradient(right, rgb(253, 253, 253), rgb(247, 247, 247));
+    margin: 0px;
+    h2{
+        width: 40%;
+    }
+    #container{
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 0px;
 
-    form{
-        background: #ffffff;
-        padding: 4%;
-        border-radius: 20px;
 
-        .input-group{
-            margin-bottom: 20px;
-            input, select, textarea{
-                width: 100%;
-                padding: 10px;
+        #address{
+            width: 30%;
+
+            .box{
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                #icon{
+                    width: 60px;
+                    height: 60px;
+                    min-width: 60px;
+                    min-height: 60px;
+                    background: $white;
+                    margin-right: 25px;
+                    box-shadow: 3px 3px 12px rgb(240, 239, 239);
+                    border-radius: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    svg{
+                        // font-size: 0.5em;
+                        width: 55%;
+                    }
+                }
+
+                #content{
+                    h4{
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-weight: 400;
+                        letter-spacing: 2px;
+                        line-height: 32px;
+                    }
+                }
             }
         }
 
-        button{
-            background: grey;
+        form{
+            width: 60%;
+            background: #ffffff;
+            padding: 4%;
+            border-radius: 10px;
+
+            .input-group{
+                margin-bottom: 20px;
+                input, select, textarea{
+                    width: 100%;
+                    padding: 15px 14px;
+                    outline: none;
+                    border: 2px solid rgb(238, 238, 238);
+                    border-radius: 5px;
+                    background-color: $white;
+                }
+            }
+
+            #btn-submit{
+                background: $darkerBlue;
+                width: 100%;
+                padding: 15px;
+                border-radius: 5px;
+                color: $white;
+            }
         }
     }
 }
 @media screen and (max-width:900px) {
 
     section#contact{
-        justify-content: center;
-        flex-direction: column;
-
-        #address{
-            order: 1;
+        padding: 5% 6%;
+        margin: 0px;
+        h2{
+            width: 90%;
         }
-
-        form{
-            order: 0;
-            background: #ffffff;
-            padding: 4%;
-            border-radius: 20px;
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
     
-            .input-group{
-                margin-bottom: 20px;
-                input, select{
-                    width: 100%;
-                    padding: 10px;
+            #address{
+                width: 100%;
+    
+                .box{
+                    margin-bottom: 30px;
                 }
             }
     
-            button{
-                background: grey;
+            form{
+                width: 100%;
+                margin-bottom: 100px;
             }
         }
     }

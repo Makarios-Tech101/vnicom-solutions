@@ -18,14 +18,14 @@ body{
     background: $white;
 }
 header{
-    padding: 20px 5%;
+    padding: 20px 10%;
 }
 section{
-    padding: 10% 5%;
+    padding: 10% 10%;
     margin-top: 20px;
 }
 footer{
-    padding: 10% 5%;
+    padding: 10% 10%;
 }
 a{
     font-weight: 500;
@@ -33,33 +33,35 @@ a{
     color: inherit;
     cursor: pointer;
 }
+
 h1{
     font-size: 3.8em;
 }
 h2{
-    font-size: 2em;
+    font-size: 1.9em;
 }
 h3{
-    font-size: 1.5em;
-    font-weight: 550;
+    font-size: 1.6em;
 }
 h4{
-    font-size: 1.2em;
-    font-weight: 500;
+    font-size: 1.3em;
 }
 h5{
     font-size: 1.1em;
+}
+h2,h3,h4,h5{
     font-weight: 500;
 }
 p{
-    font-size: 17px;
+    font-size: 1em;
 }
 button{
-    display: none;
     background: none;
     outline: none;
     border: none;
     cursor: pointer;
+    font-weight: 500;
+    font-size: 1.2em;
 }
 img{
     width: 100%;
@@ -79,10 +81,10 @@ ul{
 
 @media screen and (max-width:760px) {
     header{
-        padding: 20px 3%;
+        padding: 20px 6%;
     }
     section{
-        padding: 10% 3%;
+        padding: 10% 6%;
         margin-top: 20px;
     }
     h1{
