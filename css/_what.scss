@@ -36,7 +36,7 @@ section#what-we-do{
         flex-wrap: wrap;
         margin-top: 80px;
 
-        #box{
+        .box{
             width: 45%;
             box-shadow: 0px 6px 24px $lightGrey;
             border-radius: 30px;
@@ -69,7 +69,7 @@ section#what-we-do{
     }
 
     #container{
-        #box{
+        .box{
             width: 47%;
 
             img{
@@ -109,7 +109,7 @@ section#what-we-do{
         justify-content: center;
         align-content: center;
 
-        #box{
+        .box{
             width: 90%;
         }
     }
