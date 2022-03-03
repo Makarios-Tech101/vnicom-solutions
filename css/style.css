@@ -409,6 +409,12 @@ section#about #intro p {
   }
 }
 
+@media screen and (max-width: 500px) {
+  section#about #image {
+    width: 75%;
+  }
+}
+
 section#what-we-do {
   position: relative;
   top: 0;
@@ -576,7 +582,7 @@ section#why-us #container article {
 }
 
 section#why-us #container article img {
-  width: 10%;
+  width: 20%;
 }
 
 section#why-us #container article h5 {
