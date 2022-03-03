@@ -3,3 +3,57 @@ footer{
         margin-top: 0px;
     }
 }
+
+section#contact{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    form{
+        background: #ffffff;
+        padding: 4%;
+        border-radius: 20px;
+
+        .input-group{
+            margin-bottom: 20px;
+            input, select{
+                width: 100%;
+                padding: 10px;
+            }
+        }
+
+        button{
+            background: grey;
+        }
+    }
+}
+@media screen and (max-width:900px) {
+
+    section#contact{
+        justify-content: center;
+        flex-direction: column;
+
+        #address{
+            order: 1;
+        }
+        
+        form{
+            order: 0;
+            background: #ffffff;
+            padding: 4%;
+            border-radius: 20px;
+    
+            .input-group{
+                margin-bottom: 20px;
+                input, select{
+                    width: 100%;
+                    padding: 10px;
+                }
+            }
+    
+            button{
+                background: grey;
+            }
+        }
+    }
+}
