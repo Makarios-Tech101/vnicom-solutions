@@ -2,21 +2,56 @@ footer{
     width: 100%;
     min-height: 70vh;
     background: $darkBlue;
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+    #talk{
+        // background: rgb(228, 228, 228);
+        width: 100%;
+        position: absolute;
+        top: -43%;
+        left: 0px;
+
+        #container{
+            display: flex;
+            background: $white;
+            padding: 8% 5%;
+            width: 80%;
+            margin: 0px auto;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            border-radius: 50px;
+            box-shadow: -1px -1px 1px lightgrey;
+            border: 1px solid rgb(238, 238, 238);
+
+            #btn-action{
+                background: $gold;
+                padding: 10px 40px;
+            }
+        }
+    }
 
     #wrapper{
-    margin-top: 150px;
-    border: none;
-    border-top: 2px solid $gold;
-    border-bottom: 2px solid $gold;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+        margin-top: 100px !important;
+        border: none;
+        border-top: 2px solid $gold;
+        border-bottom: 2px solid $gold;
 
-    background-image: url("/assets/images/logo-bg.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:contain;
-    padding: 5% 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        background-image: url("/assets/images/logo-bg.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain;
+        padding: 5% 0px;
 
         h4{
             color: rgba($color:#ffffff, $alpha:0.5);
@@ -39,7 +74,6 @@ footer{
         #company{
     
         }
-    
         #contact{
             a{
                 color: $gold;
@@ -55,15 +89,38 @@ footer{
                 margin-bottom: 10px;
             }
         }
-    }
+}
 
 @media screen and (max-width:900px) {
-    footer{    
+    footer{
+        margin-top: 120px;
+        #talk{
+            // background: rgb(228, 228, 228);
+            width: 100%;
+            position: absolute;
+            top: -25%;
+            left: 0px;
+    
+            #container{
+                padding: 15% 8%;
+                width: 90%;
+                margin: 0px auto;
+                text-align: center;
+    
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+    
+                #btn-action{
+                    margin-top: 30px;
+                }
+            }
+        }
+    
         #wrapper{
-        display: flex;
-        flex-direction: column;
-        margin-top: 0px;
-
+            display: flex;
+            flex-direction: column;
+            margin-top: 170px !important;
     
             h4{
                 color: rgba($color:#ffffff, $alpha:0.5);
