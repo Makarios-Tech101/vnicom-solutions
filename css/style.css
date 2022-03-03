@@ -32,10 +32,10 @@ footer {
 }
 
 a {
-  color: #010336;
   font-weight: 500;
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 h1 {
@@ -157,7 +157,7 @@ header button img {
     width: 25%;
   }
   header nav ul {
-    position: absolute;
+    position: fixed;
     top: 90px;
     left: 0px;
     z-index: 5;
@@ -183,6 +183,7 @@ header button img {
     list-style: none;
     -webkit-transition: all .15s ease-in;
     transition: all .15s ease-in;
+    border-top: 3px solid #ffbf00;
   }
   header nav ul li {
     margin-bottom: 40px;

@@ -50,7 +50,7 @@ header{
                 width: 25%;
             }
             ul{
-                position: absolute;
+                position: fixed;
                 top: 90px;
                 left: 0px;
                 z-index: 5;
@@ -68,8 +68,10 @@ header{
                 align-items: flex-start;
                 flex-direction: column;
                 list-style: none;
-
+                
                 transition: all .15s ease-in;
+
+                border-top: 3px solid $gold;
 
                 li{
                     margin-bottom: 40px;
