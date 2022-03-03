@@ -22,7 +22,7 @@ section#contact form .input-group {
   margin-bottom: 20px;
 }
 
-section#contact form .input-group input, section#contact form .input-group select {
+section#contact form .input-group input, section#contact form .input-group select, section#contact form .input-group textarea {
   width: 100%;
   padding: 10px;
 }
