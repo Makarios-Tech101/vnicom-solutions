@@ -28,7 +28,7 @@ section {
 }
 
 footer {
-  padding: 8% 5%;
+  padding: 15% 5%;
 }
 
 a {
@@ -124,6 +124,10 @@ header nav #logo {
   width: 15%;
 }
 
+header nav #logo img {
+  width: 100%;
+}
+
 header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,6 +156,9 @@ header button img {
 }
 
 @media screen and (max-width: 1000px) {
+  header nav #logo {
+    width: 25%;
+  }
   header nav ul {
     position: absolute;
     top: 90px;
@@ -568,10 +575,12 @@ section#why-us #container article h5 {
 }
 
 section#talk {
-  background: #ebebeb;
+  background: #e4e4e4;
   position: relative;
   top: 0px;
-  margin-top: 50px;
+  height: 10px;
+  padding: 0px;
+  margin-top: 80px;
 }
 
 section#talk #container {
@@ -579,7 +588,7 @@ section#talk #container {
   display: -ms-flexbox;
   display: flex;
   background: #ffffff;
-  padding: 6%;
+  padding: 8% 5%;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -593,11 +602,57 @@ section#talk #container {
   border: 1px solid #eeeeee;
   width: 80%;
   margin: 0px auto;
+  position: absolute;
+  top: -110px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 section#talk #container #btn-action {
   background: #ffbf00;
   padding: 10px 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  section#talk {
+    background: #e4e4e4;
+    position: static;
+    top: 0px;
+    height: auto;
+    margin: 50px auto;
+  }
+  section#talk #container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #ffffff;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 0px;
+    -webkit-box-shadow: -1px -1px 1px lightgrey;
+            box-shadow: -1px -1px 1px lightgrey;
+    border: 1px solid #eeeeee;
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+  section#talk #container #btn-action {
+    margin-top: 30px;
+  }
 }
 
 footer {
@@ -607,6 +662,7 @@ footer {
 }
 
 footer #wrapper {
+  margin-top: 150px;
   border: none;
   border-top: 2px solid #ffbf00;
   border-bottom: 2px solid #ffbf00;
@@ -641,12 +697,9 @@ footer #wrapper #about {
 }
 
 footer #wrapper #about a {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
-}
-
-footer #wrapper #about a img {
-  width: 30%;
+  width: 40%;
 }
 
 footer #wrapper #contact a {
@@ -661,7 +714,7 @@ footer ul li {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   footer #wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -670,6 +723,7 @@ footer ul li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 0px;
   }
   footer #wrapper h4 {
     color: rgba(255, 255, 255, 0.5);
@@ -679,7 +733,7 @@ footer ul li {
     width: 90%;
     margin-bottom: 50px;
   }
-  footer #wrapper #about a img {
+  footer #wrapper #about a {
     width: 30%;
   }
   footer #wrapper #company {

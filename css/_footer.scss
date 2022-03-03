@@ -5,6 +5,7 @@ footer{
 
 
     #wrapper{
+    margin-top: 150px;
     border: none;
     border-top: 2px solid $gold;
     border-bottom: 2px solid $gold;
@@ -31,12 +32,9 @@ footer{
             width: 35%;
             color: $white;
             a{
-                display: block;
+                display: inline-block;
                 margin-bottom: 20px;
-    
-                img{
-                    width: 30%;
-                }
+                width: 40%;
             }
         }
         #company{
@@ -60,11 +58,13 @@ footer{
         }
     }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:900px) {
     footer{    
         #wrapper{
         display: flex;
         flex-direction: column;
+         margin-top: 0px;
+
     
             h4{
                 color: rgba($color:#ffffff, $alpha:0.5);
@@ -75,10 +75,8 @@ footer{
                 width: 90%;
                 margin-bottom: 50px;
 
-                a{        
-                    img{
-                        width: 30%;
-                    }
+                a{
+                    width: 30%;
                 }
             }
             #company{
