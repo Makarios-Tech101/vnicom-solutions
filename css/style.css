@@ -95,9 +95,6 @@ ul {
 }
 
 @media screen and (max-width: 760px) {
-  header, section {
-    padding: 20px 3%;
-  }
   h1 {
     font-size: 3em;
   }
@@ -165,7 +162,7 @@ header button img {
     left: 0px;
     z-index: 5;
     background: #ffffff;
-    width: 30%;
+    width: 0%;
     height: 90vh;
     opacity: 0;
     padding: 100px 6%;
@@ -184,14 +181,11 @@ header button img {
         -ms-flex-direction: column;
             flex-direction: column;
     list-style: none;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
+    -webkit-transition: all .15s ease-in;
+    transition: all .15s ease-in;
   }
   header nav ul li {
     margin-bottom: 40px;
-  }
-  header nav ul li a {
-    text-decoration: none;
   }
   header button {
     display: block;
@@ -450,7 +444,7 @@ section#what-we-do #container .box p {
     margin: 30px 0px;
   }
   section#what-we-do #container .box p {
-    height: 170px;
+    height: auto;
   }
 }
 
