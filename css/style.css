@@ -27,6 +27,10 @@ section {
   margin-top: 20px;
 }
 
+footer {
+  padding: 8% 5%;
+}
+
 a {
   color: #010336;
   font-weight: 500;
@@ -49,6 +53,7 @@ h3 {
 
 h4 {
   font-size: 1.2em;
+  font-weight: 500;
 }
 
 h5 {
@@ -70,6 +75,10 @@ button {
 
 img {
   width: 100%;
+}
+
+ul {
+  list-style: none;
 }
 
 #btn-action {
@@ -559,8 +568,9 @@ section#why-us #container article h5 {
 }
 
 section#talk {
+  background: #ebebeb;
   position: relative;
-  top: 200px;
+  top: 0px;
   margin-top: 50px;
 }
 
@@ -581,12 +591,8 @@ section#talk #container {
   -webkit-box-shadow: -1px -1px 1px lightgrey;
           box-shadow: -1px -1px 1px lightgrey;
   border: 1px solid #eeeeee;
-  width: 70%;
-  position: absolute;
-  top: -10%;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  width: 80%;
+  margin: 0px auto;
 }
 
 section#talk #container #btn-action {
@@ -596,7 +602,91 @@ section#talk #container #btn-action {
 
 footer {
   width: 100%;
-  height: 100vh;
+  min-height: 70vh;
   background: #003B65;
+}
+
+footer #wrapper {
+  border: none;
+  border-top: 2px solid #ffbf00;
+  border-bottom: 2px solid #ffbf00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-image: url("/assets/images/logo-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 5% 0px;
+}
+
+footer #wrapper h4 {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
+footer #wrapper p, footer #wrapper a {
+  color: #ffffff;
+}
+
+footer #wrapper #about {
+  width: 35%;
+  color: #ffffff;
+}
+
+footer #wrapper #about a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+footer #wrapper #about a img {
+  width: 30%;
+}
+
+footer #wrapper #contact a {
+  color: #ffbf00;
+}
+
+footer ul {
+  margin-top: 10px;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  footer #wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer #wrapper h4 {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+  }
+  footer #wrapper #about {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  footer #wrapper #about a img {
+    width: 30%;
+  }
+  footer #wrapper #company {
+    margin-bottom: 50px;
+  }
+  footer #wrapper ul li {
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

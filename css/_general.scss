@@ -24,6 +24,9 @@ section{
     padding: 10% 5%;
     margin-top: 20px;
 }
+footer{
+    padding: 8% 5%;
+}
 a{
     color: $darkerBlue;
     font-weight: 500;
@@ -42,6 +45,7 @@ h3{
 }
 h4{
     font-size: 1.2em;
+    font-weight: 500;
 }
 h5{
     font-size: 1.1em;
@@ -59,6 +63,9 @@ button{
 }
 img{
     width: 100%;
+}
+ul{
+    list-style: none;
 }
 #btn-action{
     padding: 15px 35px;
