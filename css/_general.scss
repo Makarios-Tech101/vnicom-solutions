@@ -3,10 +3,11 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: "Poppins";
-    font-size: 17px;
     color: $darkerBlue;
     box-sizing: border-box;
+    
+    font-family: "Poppins";
+    font-size: 17px;
 }
 
 html{
@@ -79,17 +80,15 @@ ul{
 
 
 @media screen and (max-width:760px) {
-    // header{
-    //     padding: 20px 5%;
-    // }
-    // section{
-    //     padding: 10% 5%;
-    //     margin-top: 20px;
-    // }
-    // footer{
-    //     padding: 15% 5%;
-    // }
+        
+    header{
+        padding: 20px 3%;
+    }
+    section{
+        padding: 10% 3%;
+        margin-top: 20px;
+    }
     h1{
-        font-size: 3em;
+        font-size: 2.3em;
     }
 }
