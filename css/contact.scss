@@ -42,6 +42,7 @@ section#contact{
                     svg{
                         // font-size: 0.5em;
                         width: 55%;
+                        fill:rgba($color: $darkerBlue, $alpha: 0.6);
                     }
                 }
 
@@ -51,8 +52,16 @@ section#contact{
                     }
                     p{
                         font-weight: 400;
-                        letter-spacing: 2px;
-                        line-height: 32px;
+                        letter-spacing: 1px;
+                        line-height: 30px;
+                        color: rgb(80, 80, 80);
+                    }
+
+                    ul{
+                        li{
+                            color: rgb(80, 80, 80);
+                            margin: 5px 0px;
+                        }
                     }
                 }
             }

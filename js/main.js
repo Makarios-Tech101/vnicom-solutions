@@ -1,4 +1,7 @@
 window.addEventListener('load', ()=>{
+    //Initialize AOS
+    AOS.init();
+
     const menu = document.getElementsByClassName("menu")[0]
     const menu_bar = document.getElementById("menu-bar")
     const toggle = document.getElementsByClassName("toggle")

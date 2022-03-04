@@ -7,7 +7,8 @@
     <link rel="icon" href="assets/images/logo.svg">
 
     <title>Vnicom | Welcome</title>
-    <link rel="stylesheet" href="css/style.css">                
+    <link rel="stylesheet" href="css/style.css">   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">             
 </head>
 <body>
 <header>
@@ -24,7 +25,7 @@
                 <a href="index.html#why-us" class="toggle">SHOWCASE</a>
             </li>
             <li>
-                <a href="https://www.vnicomhub.com" class="toggle">ACADEMY</a>
+                <a href="https://www.vnicomhub.com" class="toggle" target="_blank">ACADEMY</a>
             </li>
             <li>
                 <a href="contact.html" class="toggle">GET IN TOUCH</a>
@@ -39,7 +40,8 @@
 
 <main>
     <section id="welcome">
-        <img src="assets/images/dots-fade.svg" class="decorative" id="dots-fade" alt="">
+        <img src="assets/images/dots-fade.svg" class="decorative" id="dots-fade" data-aos="fade-up"
+        data-aos-duration="3000" alt="">
         <img src="assets/images/welcome-dots.svg" class="decorative" id="welcome-dots" alt="">
         <div id="intro">
             <h1>
@@ -59,8 +61,8 @@
     </section>
     
     <section id="about">
-        <div id="image">
-        <img src="assets/images/about.png" alt="">
+        <div id="image" data-aos="fade-up-right">
+            <img src="assets/images/about.png" alt="">
         </div>
         <div id="intro">
             <h3>
@@ -84,7 +86,7 @@
             </div>
         </div>
         <div id="bg"></div>
-        <div id="container">
+        <div id="container" data-aos="fade-left">
             <article class="box">
                 <img src="assets/images/what/software.svg" alt="">
                 <h4>Software Development</h4>
@@ -121,7 +123,7 @@
         </h3>
         <img src="assets/images/why/ball.svg" id="ball" alt="">
         <div id="container">
-            <div id="left">
+            <div id="left" data-aos="fade-down-right">
                 <article>
                     <img src="assets/images/why/world-class.svg" alt="">
                     <h5>World class team</h5>
@@ -137,7 +139,7 @@
                     </p>
                 </article>
             </div>
-            <div id="right">
+            <div id="right" data-aos="fade-down-left">
                 <article>
                     <img src="assets/images/why/success.svg" alt="">
                     <h5>Successful, diverse teams</h5>
@@ -159,7 +161,7 @@
 
 <footer>
     <section id="talk">
-        <div id="container">
+        <div id="container" data-aos="zoom-in">
             <div>
                 <h3>Have a new idea?</h3>
                 <p>Let's work together to bring it to live</p>
@@ -200,6 +202,7 @@
     </div>
 </footer>
 
+<script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script defer src="js/main.js"></script>
 </body>
 </html>
