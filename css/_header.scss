@@ -3,6 +3,16 @@
 header{
     width:100%;
     background: rgba($color: #010336, $alpha: 0.1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+
+    &.scroll{
+        background: $white;
+        box-shadow: -2px 0px 6px $lightGrey;
+    }
 
     nav{
         display: flex;
