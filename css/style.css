@@ -110,9 +110,8 @@ ul {
 
 header {
   width: 100%;
-  background: rgba(1, 3, 54, 0.1);
-  position: -webkit-sticky;
-  position: sticky;
+  background: #E5E5EB;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
@@ -173,7 +172,12 @@ header button img {
   width: 100%;
 }
 
-@media screen and (max-width: 1000px) {
+#spacer {
+  height: 96px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1050px) {
   header nav #logo {
     width: 25%;
   }
@@ -215,6 +219,9 @@ header button img {
   header .show {
     width: 100%;
     opacity: 1;
+  }
+  #spacer {
+    height: 90px;
   }
 }
 
@@ -267,7 +274,7 @@ section#welcome {
   position: relative;
   padding: 25px 10%;
   min-height: 80vh;
-  background: rgba(1, 3, 54, 0.1);
+  background: #E5E5EB;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

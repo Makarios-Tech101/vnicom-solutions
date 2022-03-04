@@ -35,7 +35,6 @@ window.addEventListener('load', ()=>{
     function doSomething(){
         if(scroll > 5){
             header.classList.add('scroll')
-            console.log(logo)
         }else{
             header.classList.remove('scroll')
         }

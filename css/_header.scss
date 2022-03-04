@@ -2,8 +2,8 @@
 
 header{
     width:100%;
-    background: rgba($color: #010336, $alpha: 0.1);
-    position: sticky;
+    background: $background;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 5;
@@ -53,8 +53,11 @@ header{
         }
     }
 }
-
-@media screen and (max-width:1000px) {
+#spacer{
+    height: 96px;
+    width: 100%;
+}
+@media screen and (max-width:1050px) {
     header{
         nav{
             #logo{
@@ -98,6 +101,9 @@ header{
             width: 100%;
             opacity: 1;
         }
+    }
+    #spacer{
+        height: 90px;
     }
 }
 

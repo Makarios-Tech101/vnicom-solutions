@@ -2,7 +2,7 @@ section#welcome{
     position: relative;
     padding: 25px 10%;
     min-height: 80vh;
-    background: rgba($color: #010336, $alpha: 0.1);
+    background: $background;
 
     display: flex;
     justify-content: flex-start;
