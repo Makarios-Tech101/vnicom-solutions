@@ -3,6 +3,11 @@ section#welcome{
     padding: 25px 10%;
     min-height: 80vh;
     background: rgba($color: #010336, $alpha: 0.1);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
     margin-top: 0px;
     #dots-fade{
         position: absolute;
@@ -15,7 +20,7 @@ section#welcome{
     #welcome-dots{
         position: absolute;
         top: 40px;
-        right: 50px;
+        right: 8%;
         z-index: 3;
         width: 30%;
     }
@@ -27,10 +32,6 @@ section#welcome{
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-        
-        h1{
-            margin-top: 30px;
-        }
 
         #intro-note{
             margin: 30px 0px;
