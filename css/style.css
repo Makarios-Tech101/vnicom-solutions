@@ -290,7 +290,7 @@ section#welcome {
 section#welcome #dots-fade {
   position: absolute;
   top: 40px;
-  z-index: -3;
+  z-index: 1;
   width: 20%;
 }
 
@@ -303,6 +303,8 @@ section#welcome #welcome-dots {
 }
 
 section#welcome #intro {
+  position: relative;
+  z-index: 2;
   width: 65%;
   display: -webkit-box;
   display: -ms-flexbox;
