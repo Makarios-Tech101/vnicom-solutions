@@ -23,8 +23,8 @@ header {
 }
 
 section {
-  padding: 10% 10%;
-  margin-top: 20px;
+  padding: 5% 10%;
+  margin-top: 5px;
 }
 
 footer {
@@ -656,7 +656,7 @@ footer {
 footer #talk {
   width: 100%;
   position: absolute;
-  top: -43%;
+  top: -28%;
   left: 0px;
 }
 
