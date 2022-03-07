@@ -100,6 +100,19 @@ section#contact #container form .input-group input, section#contact #container f
   border: 2px solid #eeeeee;
   border-radius: 5px;
   background-color: #ffffff;
+  /**
+                    * Form Validation Errors
+                    */
+}
+
+section#contact #container form .input-group input.error, section#contact #container form .input-group select.error, section#contact #container form .input-group textarea.error {
+  border-color: red;
+}
+
+section#contact #container form .input-group input.error-message, section#contact #container form .input-group select.error-message, section#contact #container form .input-group textarea.error-message {
+  color: red;
+  font-style: italic;
+  margin-bottom: 1em;
 }
 
 section#contact #container form #btn-submit {

@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/contact.css">              
     
     <title>Vnicom | Talk to us</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">             
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+                
 </head>
 <body>
 <header id="header">
@@ -53,11 +54,11 @@
             </div>
 
             <div class="input-group">
-                <input type="text" name="phone" id="phone" placeholder="Your phone number">
+                <input type="text" maxlength="15" name="phone" id="phone" placeholder="Your phone number">
             </div>
 
             <div class="input-group">
-                <select name="project type">
+                <select name="project" id="project">
                     <option value="">Project Type</option>
                     <option value="Web Application">Web Application</option>
                     <option value="Mobile App">Mobile App</option>
@@ -68,9 +69,8 @@
             </div>
 
             <div class="input-group">
-                <textarea name="message" id="" 
-                cols="30" rows="5" placeholder="Tell more about what you want">
-            </textarea>
+                <textarea name="message" id="message" 
+                cols="30" rows="5" placeholder="Tell more about what you want" ></textarea>
             </div>
             <button type="submit" id="btn-submit">
                 SUBMIT
@@ -144,8 +144,9 @@
     </div>
 </footer>
 <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script defer src="js/main.js"></script>
 <script defer src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script defer src="js/main.js"></script>
 <script defer src="js/email.js"></script>
 </body>
 </html>

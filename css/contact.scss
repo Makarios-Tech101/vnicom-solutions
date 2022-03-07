@@ -82,6 +82,19 @@ section#contact{
                     border: 2px solid rgb(238, 238, 238);
                     border-radius: 5px;
                     background-color: $white;
+
+                    /**
+                    * Form Validation Errors
+                    */
+                    &.error {
+                        border-color: red;
+                    }
+
+                    &.error-message {
+                        color: red;
+                        font-style: italic;
+                        margin-bottom: 1em;
+                    }
                 }
             }
 
