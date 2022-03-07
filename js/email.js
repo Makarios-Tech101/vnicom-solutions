@@ -32,7 +32,7 @@ window.addEventListener('load', ()=>{
                             const body = message_body
 
                             Email.send({
-                                SecureToken : "47445aa6-2d5e-4a42-b173-6a52b799959f ",
+                                SecureToken : "47445aa6-2d5e-4a42-b173-6a52b799959f",
                                 To : to,
                                 From : from,
                                 Subject : subject,
