@@ -114,10 +114,9 @@ header {
   width: 100%;
   background: #E5E5EB;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   z-index: 5;
-  width: 100%;
 }
 
 header.scroll {
@@ -177,6 +176,8 @@ header button img {
 #spacer {
   height: 90px;
   width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media screen and (max-width: 1050px) {

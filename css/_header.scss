@@ -4,10 +4,9 @@ header{
     width:100%;
     background: $background;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     z-index: 5;
-    width: 100%;
 
     &.scroll{
         background: $white;
@@ -56,6 +55,7 @@ header{
 #spacer{
     height: 90px;
     width: 100%;
+    box-sizing: border-box;
 }
 @media screen and (max-width:1050px) {
     header{
