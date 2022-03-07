@@ -39,7 +39,11 @@ window.addEventListener('load', ()=>{
                                 Body : body
                             })
                             .then(
-                            message => alert(message)
+                            message => {
+                                if(message.toLowerCase() == "ok"){
+                                    alert("Message sent")
+                                }
+                            }
                             )
                         }
                     }
@@ -69,11 +73,10 @@ window.addEventListener('load', ()=>{
         ValidateMessage(user_message)
     })
 
-
     //validate name
     function ValidateName(uname)
     { 
-        var letters = /^[A-Za-z]+$/;
+        var letters = /^[A-Za-z ]+$/;
         if(uname.value.match(letters))
         {
             uname.classList.remove("error")
