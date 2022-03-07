@@ -266,7 +266,7 @@ header button img {
 section#welcome {
   position: relative;
   padding: 25px 10%;
-  min-height: 80vh;
+  min-height: 90vh;
   background: #E5E5EB;
   display: -webkit-box;
   display: -ms-flexbox;
