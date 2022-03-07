@@ -382,6 +382,12 @@ section#welcome #intro #btn-action {
   }
 }
 
+@media screen and (max-width: 500px) {
+  section#welcome #dots-fade {
+    width: 40%;
+  }
+}
+
 section#about {
   display: -webkit-box;
   display: -ms-flexbox;

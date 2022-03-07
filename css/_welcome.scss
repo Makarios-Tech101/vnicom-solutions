@@ -62,6 +62,7 @@ section#welcome{
         }
     }
 }
+
 @media screen and (max-width:900px) {
     section#welcome{
     padding: 10% 3%;
@@ -98,6 +99,13 @@ section#welcome{
                 background-color: $darkerBlue;
                 margin-top: 30px;
             }
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    section#welcome{
+        #dots-fade{
+            width: 40%;
         }
     }
 }
