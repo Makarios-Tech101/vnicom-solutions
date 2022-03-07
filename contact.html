@@ -37,19 +37,23 @@
         </button>
     </nav>
 </header>
-
+<div id="spacer"></div>
 <section id="contact">
     <h2>
         Let's build that awasome product together
     </h2>
     <div id="container">
-        <form data-aos="fade-right">
+        <form data-aos="fade-right" id="form">
             <div class="input-group">
-                <input type="text" name="name" id="" placeholder="Your name">
+                <input type="text" name="name" id="name" placeholder="Your name">
             </div>
 
             <div class="input-group">
-                <input type="email" name="email" id="" placeholder="Your email">
+                <input type="email" name="email" id="email" placeholder="Your email">
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="phone" id="phone" placeholder="Your phone number">
             </div>
 
             <div class="input-group">
@@ -64,22 +68,11 @@
             </div>
 
             <div class="input-group">
-                <select name="Budget">
-                    <option value="">Budget</option>
-                    <option value="$5,000 - $30,000">$5,000 - $30,000</option>
-                    <option value="$30,000 - $50,000">$30,000 - $50,000</option>
-                    <option value="$50,000 - $100,000">$50,000 - $100,000</option>
-                    <option value="$100,000 - Above">$100,000 - Above</option>
-                    <option value="Others">Others</option>
-                </select>
-            </div>
-
-            <div class="input-group">
                 <textarea name="message" id="" 
                 cols="30" rows="5" placeholder="Tell more about what you want">
             </textarea>
             </div>
-            <button type="button" id="btn-submit">
+            <button type="submit" id="btn-submit">
                 SUBMIT
             </button>
         </form>
@@ -152,5 +145,7 @@
 </footer>
 <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script defer src="js/main.js"></script>
+<script defer src="https://smtpjs.com/v3/smtp.js"></script>
+<script defer src="js/email.js"></script>
 </body>
 </html>

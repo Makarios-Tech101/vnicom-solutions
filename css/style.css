@@ -173,7 +173,7 @@ header button img {
 }
 
 #spacer {
-  height: 96px;
+  height: 90px;
   width: 100%;
 }
 
@@ -219,9 +219,6 @@ header button img {
   header .show {
     width: 100%;
     opacity: 1;
-  }
-  #spacer {
-    height: 90px;
   }
 }
 
