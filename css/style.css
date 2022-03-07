@@ -120,6 +120,10 @@ ul {
 header {
   width: 100%;
   background: #E5E5EB;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
 }
 
 header.scroll {
