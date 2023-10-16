@@ -1,0 +1,48 @@
+#team{
+    padding-top: 0;
+    h1{
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: 500;
+        font-size: 3rem;
+    }
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    
+    .member{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 40px;
+        border-radius: 10px;
+    }
+    .m-picture{
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        // background-size: cover;
+        // background-position: center;
+        object-fit: cover;
+        border: 4px solid #003B65;
+    }
+    .team-dtls{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .social-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        img{
+            width: 30px;
+        }
+    }
+}

@@ -4,42 +4,26 @@ footer #wrapper {
 
 section#contact {
   padding: 5% 10%;
-  background: -webkit-gradient(linear, right top, left top, from(#fdfdfd), to(#f7f7f7));
-  background: linear-gradient(right, #fdfdfd, #f7f7f7);
+  background: linear-gradient(right, rgb(253, 253, 253), rgb(247, 247, 247));
   margin: 0px;
 }
-
 section#contact h2 {
   width: 40%;
 }
-
 section#contact #container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 50px 0px;
 }
-
 section#contact #container #address {
   width: 30%;
 }
-
 section#contact #container #address .box {
   margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-
 section#contact #container #address .box #icon {
   width: 60px;
   height: 60px;
@@ -47,74 +31,57 @@ section#contact #container #address .box #icon {
   min-height: 60px;
   background: #ffffff;
   margin-right: 25px;
-  -webkit-box-shadow: 3px 3px 12px #f0efef;
-          box-shadow: 3px 3px 12px #f0efef;
+  box-shadow: 3px 3px 12px rgb(240, 239, 239);
   border-radius: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 section#contact #container #address .box #icon svg {
   width: 55%;
   fill: rgba(1, 3, 54, 0.6);
 }
-
 section#contact #container #address .box #content h4 {
   margin-bottom: 10px;
 }
-
 section#contact #container #address .box #content p {
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 30px;
-  color: #505050;
+  color: rgb(80, 80, 80);
 }
-
 section#contact #container #address .box #content ul li {
-  color: #505050;
+  color: rgb(80, 80, 80);
   margin: 5px 0px;
 }
-
 section#contact #container form {
   width: 60%;
   background: #ffffff;
   padding: 4%;
   border-radius: 10px;
 }
-
 section#contact #container form .input-group {
   margin-bottom: 20px;
 }
-
 section#contact #container form .input-group input, section#contact #container form .input-group select, section#contact #container form .input-group textarea {
   width: 100%;
   padding: 15px 14px;
   outline: none;
-  border: 2px solid #eeeeee;
+  border: 2px solid rgb(238, 238, 238);
   border-radius: 5px;
   background-color: #ffffff;
   /**
-                    * Form Validation Errors
-                    */
+  * Form Validation Errors
+  */
 }
-
 section#contact #container form .input-group input.error, section#contact #container form .input-group select.error, section#contact #container form .input-group textarea.error {
   border-color: red;
 }
-
 section#contact #container form .input-group input.error-message, section#contact #container form .input-group select.error-message, section#contact #container form .input-group textarea.error-message {
   color: red;
   font-style: italic;
   margin-bottom: 1em;
 }
-
 section#contact #container form #btn-submit {
   background: #010336;
   width: 100%;
@@ -132,19 +99,10 @@ section#contact #container form #btn-submit {
     width: 90%;
   }
   section#contact #container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   section#contact #container #address {
     width: 100%;
@@ -156,5 +114,4 @@ section#contact #container form #btn-submit {
     width: 100%;
     margin-bottom: 100px;
   }
-}
-/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=contact.css.map */
