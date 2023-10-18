@@ -1,5 +1,5 @@
 #team{
-    padding-top: 0;
+   
     h1{
         text-align: center;
         margin-bottom: 50px;
@@ -9,38 +9,53 @@
 }
 .team{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    margin-bottom: 100px;
     
     .member{
         display: flex;
         flex-direction: column;
         align-items: center;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        padding: 40px;
+        // padding: 35px;
         border-radius: 10px;
+       h3{
+        font-size: 1rem;
+        // margin-top: 20px;
+       }
+        .desc{
+            min-height:200px;
+            font-size: .8rem;
+            opacity: 0.9;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
     }
     .m-picture{
-        border-radius: 50%;
-        height: 150px;
-        width: 150px;
-        // background-size: cover;
-        // background-position: center;
-        object-fit: cover;
-        border: 4px solid #003B65;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 400px;
+        width:100%; 
+        background-size: cover;
+        background-position: center;
+        // object-fit: cover;
+        // border: 4px solid #003B65;
     }
     .team-dtls{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
+        padding: 20px;
     }
     .social-icons{
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
+        // position: relative;
         img{
             width: 30px;
         }
