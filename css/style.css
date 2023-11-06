@@ -472,13 +472,18 @@ section#what-we-do #container .box p {
   text-align: justify;
   margin-bottom: 15px;
 }
-.team .m-picture {
+.team .img-wrapper {
+  width: 100%;
+  padding: 1px;
+  height: 400px;
+  overflow: hidden;
+}
+.team .img-wrapper .m-picture {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  height: 400px;
   width: 100%;
-  background-size: cover;
-  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .team .team-dtls {
   display: flex;
@@ -488,14 +493,52 @@ section#what-we-do #container .box p {
   gap: 10px;
   padding: 20px;
 }
-.team .social-icons {
+
+.social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.team .social-icons img {
+.social-icons img {
   width: 30px;
+}
+
+.director {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.director .m-picture {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.director .director-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+.director .director-info h3 {
+  font-size: 2rem;
+}
+.director .director-info .desc {
+  min-height: 200px;
+  font-size: 0.8rem;
+  opacity: 0.9;
+  text-align: justify;
+  margin-bottom: 15px;
 }
 
 section#why-us {
