@@ -8,7 +8,9 @@
 
     <title>Vnicom | Welcome</title>
     <link rel="stylesheet" href="css/style.css">   
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">             
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   
+    
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 <header id="header">
@@ -73,63 +75,76 @@
             </p>
         </div>
     </section>
-
-    <section id="what-we-do">
-        <div id="header">
-            <h3>
-                We provide a wide range of services, supporting the all-round growth of our customer's businesses
-            </h3>
-            <div>
-                <h5>Have an Idea in mind?</h5>
-                <a href="#">Let's talk</a>
+    <div class="services-container">
+        <section id="what-we-do" >
+            <div id="header">
+                <h3>
+                    We provide a wide range of services, supporting the all-round growth of our customer's businesses
+                </h3>
+                <div>
+                    <!-- <h5>Have an Idea in mind?</h5> -->
+                    <a href="#">Let's talk</a>
+                </div>
             </div>
-        </div>
-        <div id="bg"></div>
-        <div id="container" data-aos="fade-left">
-            <article class="box">
-                <img src="assets/images/what/software.svg" alt="">
-                <h4>Software Development</h4>
-                <p>
-                    Our team of agile software developers can help you create apps that run on mobile, web, desktop platforms and embedded systems.
-                </p>
-            </article>
-            <article class="box">
-                <img src="assets/images/what/group.svg" alt="">
-                <h4>Tech Education and Training</h4>
-                <p>
-                    Equipping individuals with the skills and knowledge needed to excel in tech careers.   
-                </p>
-            </article>
-            <article class="box">
-                <img src="assets/images/what/statistic.svg" alt="">
-                <h4>Statistical Research & Consultancy</h4>
-                <p>
-                    Our experienced team of professionals coupled with seasoned statistical partners and consultants  from around the world can help you uncover hidden treasure in your data. We will explore and learn from your data.
-                </p>
-            </article>
-            <article class="box">
-                <img src="assets/images/what/data.svg" alt="">
-                <h4>Data Science & Engineering</h4>
-                <p>
-                    Planning to mine big data for business intelligence? We can help you create cool, interactive & engaging dashboards that will help drive your business decisions.
-                </p>
-            </article>
-            <article class="box">
-                <img src="assets/images/what/software.svg" alt="">
-                <h4>Startup Incubation</h4>
-                <p>
-                    Supporting startups with mentorship, resources, and networking opportunities to turn ideas into successful and sustainable businesses that thrive in today's competitive market.
-                </p> 
-            </article>
-            <article class="box">
-                <img src="assets/images/what/team.svg" alt="">
-                <h4>Team Augmentation</h4>
-                <p>
-                    Struggling with a deadline and looking for more competent hands to complete a project, we are exactly what you need. We have a steady flow of trained and experienced developers that would  fit your profile.        
-                        </p>
-            </article>
-        </div>
-    </section>
+            <!-- <div id="bg"></div> -->
+            <div id="container" data-aos="fade-left" >
+                <article class="box" >
+                    <!-- <img src="assets/images/what/software.svg" alt=""> -->
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" fill-rule="evenodd" d="M5 1a4 4 0 0 0-4 4v14a4 4 0 0 0 4 4h14a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4zm6.16 4a.34.34 0 0 0-.338.39l.006.044a3.07 3.07 0 0 0 3.037 2.634h2.067v2.067a3.07 3.07 0 0 0 2.634 3.037l.045.006a.34.34 0 0 0 .389-.337V6.023C19 5.458 18.542 5 17.977 5zM7.491 8.868a.34.34 0 0 1 .258-.118h6.477c.565 0 1.023.458 1.023 1.023v6.477a.34.34 0 0 1-.39.337l-.044-.006a3.07 3.07 0 0 1-2.634-3.037v-1.726h-1.726A3.07 3.07 0 0 1 7.42 9.184l-.006-.045a.34.34 0 0 1 .08-.271Zm-3.409 3.75a.34.34 0 0 1 .258-.118h6.136c.565 0 1.023.458 1.023 1.023v6.136a.34.34 0 0 1-.39.338l-.044-.007a3.07 3.07 0 0 1-2.634-3.037v-1.385H7.047a3.07 3.07 0 0 1-3.037-2.634l-.007-.045a.34.34 0 0 1 .08-.271Z" clip-rule="evenodd"/>
+                     </svg>
+                    <h4>Software Development</h4>
+                    <p>
+                        Our team of agile software developers can help you create apps that run on mobile, web, desktop platforms and embedded systems.
+                    </p>
+                </article>
+                <article class="box" id="software-development">
+                    <!-- <img src="assets/images/what/group.svg" alt=""> -->
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20"><path fill="#fff" d="M3.33 8L10 12l10-6l-10-6L0 6h10v2zM0 8v8l2-2.22V9.2zm10 12l-5-3l-2-1.2v-6l7 4.2l7-4.2v6z"/>
+                    </svg> 
+                    <h4>Tech Education and Training</h4>
+                    <p>
+                        Equipping individuals with the skills and knowledge needed to excel in tech careers.   
+                    </p>
+                </article>
+                <article class="box">
+                    <!-- <img src="assets/images/what/statistic.svg" alt=""> -->
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><path fill="#fff" d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16M464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96l32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16"/>
+                    </svg>
+                    <h4>Statistical Research & Consultancy</h4>
+                    <p>
+                        Our experienced team of professionals coupled with seasoned statistical partners and consultants  from around the world can help you uncover hidden treasure in your data. We will explore and learn from your data.
+                    </p>
+                </article>
+                <article class="box">
+                    <!-- <img src="assets/images/what/data.svg" alt=""> -->
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32"><circle cx="9" cy="7" r="1" fill="#fff"/><path fill="#fff" d="M27 22.14V18a2 2 0 0 0-2-2h-8v-4h9a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h9v4H7a2 2 0 0 0-2 2v4.14a4 4 0 1 0 2 0V18h8v4h-3v8h8v-8h-3v-4h8v4.14a4 4 0 1 0 2 0M8 26a2 2 0 1 1-2-2a2 2 0 0 1 2 2m10-2v4h-4v-4ZM6 10V4h20v6Zm20 18a2 2 0 1 1 2-2a2 2 0 0 1-2 2"/>
+                    </svg> 
+                    <h4>Data Science & Engineering</h4>
+                    <p>
+                        Planning to mine big data for business intelligence? We can help you create cool, interactive & engaging dashboards that will help drive your business decisions.
+                    </p>
+                </article>
+                <article class="box">
+                    <!-- <img src="assets/images/what/software.svg" alt=""> -->
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path fill="#fff" fill-rule="evenodd" d="m6.547 10.263l-2.81-2.81c.309-.517.617-1.052.922-1.584c1.016-1.766 2.008-3.49 2.938-4.387c2.524-2.524 5.981-1.06 5.981-1.06s1.464 3.457-1.06 5.981c-.89.922-2.587 1.9-4.34 2.908c-.546.315-1.097.632-1.631.952m2.14-6.532a1.582 1.582 0 1 1 3.164 0a1.582 1.582 0 0 1-3.163 0m-4.09-.232C3.18 3.122 1.849 3.82.668 4.903a.48.48 0 0 0 .089.765l1.905 1.148l.002-.004c.275-.46.582-.993.894-1.533c.355-.617.716-1.243 1.04-1.78m2.587 7.84l1.148 1.905a.48.48 0 0 0 .765.088c1.083-1.18 1.782-2.512 1.404-3.93c-.522.314-1.07.63-1.613.943l-.083.048c-.548.316-1.091.628-1.616.943zM2.622 9.343a2 2 0 0 1 1.402 3.46c-.222.212-.569.379-.89.506a11 11 0 0 1-1.1.358c-.367.1-.717.18-.982.233a6 6 0 0 1-.336.059q-.066.009-.133.013a.5.5 0 0 1-.198-.022a.5.5 0 0 1-.241-.156a.5.5 0 0 1-.11-.22a.6.6 0 0 1-.012-.176c.003-.04.009-.086.015-.128c.013-.088.033-.203.06-.334c.053-.264.135-.612.235-.977c.1-.364.222-.754.359-1.095c.128-.321.294-.667.506-.888a2 2 0 0 1 1.425-.633" clip-rule="evenodd"/>
+                    </svg>
+                    <h4>Startup Incubation</h4>
+                    <p>
+                        Supporting startups with mentorship, resources, and networking opportunities to turn ideas into successful and sustainable businesses that thrive in today's competitive market.
+                    </p> 
+                </article>
+                <article class="box">
+                    <!-- <img src="assets/images/what/team.svg" alt=""> -->
+                     <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="#fff" d="M12 10a4 4 0 1 0 0-8a4 4 0 0 0 0 8m-6.5 3a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5M21 10.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0m-9 .5a5 5 0 0 1 5 5v6H7v-6a5 5 0 0 1 5-5m-7 5c0-.693.1-1.362.288-1.994l-.17.014A3.5 3.5 0 0 0 2 17.5V22h3zm17 6v-4.5a3.5 3.5 0 0 0-3.288-3.494c.187.632.288 1.301.288 1.994v6z"/>
+                    </svg>
+                    <h4>Team Augmentation</h4>
+                    <p>
+                        Struggling with a deadline and looking for more competent hands to complete a project, we are exactly what you need. We have a steady flow of trained and experienced developers that would  fit your profile.        
+                    </p>
+                </article>
+            </div>
+        </section>
+    </div>    
     <!-- <section id="team">
        <h1>Meet Our Team</h1>
         <div class="team">
@@ -186,21 +201,30 @@
     </div>
     </section> -->
     <section id="why-us">
-        <h3>
-            We deliver world class solutions that solves our clients business challenges.
-        </h3>
+        <div class="whyus-title">
+            <!-- <a href="contact.html">
+                Contact Us
+            </a> -->
+            <h3>
+                 We deliver world class solutions that solve our clients business challenges.
+            </h3>
+        </div>
         <img src="assets/images/why/ball.svg" id="ball" alt="">
         <div id="container">
             <div id="left" data-aos="fade-down-right">
                 <article>
-                    <img src="assets/images/why/world-class.svg" alt="">
+                    <!-- <img src="assets/images/why/world-class.svg" alt=""> -->
+                     <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M11.669 5.212a.365.365 0 0 1 .662 0l.814 1.668c.054.11.155.187.273.207l1.768.294c.3.05.42.434.205.658l-1.266 1.326a.4.4 0 0 0-.104.335l.279 1.85c.047.314-.266.551-.536.407l-1.595-.849a.36.36 0 0 0-.338 0l-1.595.849c-.27.144-.583-.093-.536-.407l.279-1.85a.4.4 0 0 0-.104-.335L8.609 8.04c-.214-.224-.095-.608.205-.658l1.768-.294a.37.37 0 0 0 .273-.207z"/><path d="M19 9A7 7 0 1 1 5 9a7 7 0 0 1 14 0"/><path d="m13 16.342l1.626 4.31c.328.867.492 1.302.777 1.348c.286-.042.636-.52.978-1.383c.245-.618.367-.927.62-1.094q.116-.076.251-.12c.292-.092.627-.002 1.298.18c.717.194 1.215.14 1.412 0c.058-.041 0-.003 0-.003c.116-.206-.04-.526-.353-1.167L17.456 14M11 16.342L9.374 20.65c-.328.868-.652 1.304-.937 1.35c-.286-.042-.457-.474-.8-1.337c-.244-.618-.385-.974-.638-1.14a1 1 0 0 0-.251-.12c-.292-.093-.627-.002-1.298.179c-.717.194-1.215.137-1.412-.003c-.116-.206.04-.526.353-1.167L6.544 14"/></g>
+                     </svg>
                     <h5>World class team</h5>
                     <p>
                         Our highly analytical and self-critical team will  build technology rich apps and solutions with robust user experience. We use state of the art technologies to build highly engaging products. 
                     </p>
                 </article>
                 <article>
-                    <img src="assets/images/why/agile-culture.svg" alt="">
+                    <!-- <img src="assets/images/why/agile-culture.svg" alt=""> -->
+                     <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M10 20.777a9 9 0 0 1-2.48-.969M14 3.223a9.003 9.003 0 0 1 0 17.554m-9.421-3.684a9 9 0 0 1-1.227-2.592M3.124 10.5c.16-.95.468-1.85.9-2.675l.169-.305m2.714-2.941A9 9 0 0 1 10 3.223"/><path d="m9 12l2 2l4-4"/></g>
+                    </svg>
                     <h5>Agile culture</h5>
                     <p>
                         We are very adaptive to changes in requirements, we collaborate with customers to deliver satisfactory projects 
@@ -209,14 +233,18 @@
             </div>
             <div id="right" data-aos="fade-down-left">
                 <article>
-                    <img src="assets/images/why/success.svg" alt="">
+                    <!-- <img src="assets/images/why/success.svg" alt=""> -->
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="#fff" d="M12 10a4 4 0 1 0 0-8a4 4 0 0 0 0 8m-6.5 3a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5M21 10.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0m-9 .5a5 5 0 0 1 5 5v6H7v-6a5 5 0 0 1 5-5m-7 5c0-.693.1-1.362.288-1.994l-.17.014A3.5 3.5 0 0 0 2 17.5V22h3zm17 6v-4.5a3.5 3.5 0 0 0-3.288-3.494c.187.632.288 1.301.288 1.994v6z"/>
+                    </svg>
                     <h5>Successful, diverse teams</h5>
                     <p>
-                        We have a unique mix talents which include  UX/UI engineers;  software developers; statistical programmers; data Scientists and seasoned Statistical consultants with over 20 years of experience
+                        We have a unique mix talents which include  UX/UI engineers;  software developers; statistical programmers; data scientists and seasoned statistical consultants with over 20 years of experience
                     </p>
                 </article>
                 <article>
-                    <img src="assets/images/why/care.svg" alt="">
+                    <!-- <img src="assets/images/why/care.svg" alt=""> -->
+                     <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 14 14"><path fill="#fff" fill-rule="evenodd" d="M4.685 2.422a2.315 2.315 0 1 1 4.63 0a2.315 2.315 0 0 1-4.63 0M2.446 6.214a2.536 2.536 0 0 1 3.492 0l.01.01L7 7.276l1.053-1.052l.01-.01a2.536 2.536 0 0 1 3.49 0a2.38 2.38 0 0 1 .003 3.448l-4.208 4.09a.5.5 0 0 1-.697 0l-4.207-4.09a2.38 2.38 0 0 1 .002-3.447" clip-rule="evenodd"/>
+                    </svg>
                     <h5>Robust customer care</h5>
                     <p>
                         Our customer care centre is always at your disposal. 
@@ -230,11 +258,15 @@
 <footer>
     <section id="talk">
         <div id="container" data-aos="zoom-in">
-            <div>
+            <div class="content">
                 <h3>Have a new idea?</h3>
                 <p>Let's work together to bring it to live</p>
+                
             </div>
-            <a href="contact.html" id="btn-action">TALK TO US</a>
+            <div>
+                <a href="contact.html" id="btn-action">TALK TO US</a>
+                <!-- <img src="/assets/images/other-images/happy-man.png"> -->
+            </div>
         </div>
     </section>
 
