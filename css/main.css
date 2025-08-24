@@ -1,4 +1,8 @@
 
+header nav ul li a:hover {
+    color:#0006B1;
+}
+
 section#welcome #intro #btn-action {
     display: inline-block;
     background-color: #0006B1;
@@ -71,10 +75,10 @@ section#what-we-do #container .box p {
 
 section#what-we-do #container .box svg{
     /* background-color: #9cdeff; */
-    background-color: #ffde7c;
-    padding: 25px;
-    height: 100px;
-    width: 100px;
+    background-color: #e6ecf8;
+    padding: 20px;
+    height: 90px;
+    width: 90px;
     border-radius: 50%;
 }
 
@@ -111,12 +115,17 @@ section#why-us h3 {
 
 
 section#why-us #container article svg{
-    background-color: #9cdeff;
+    background-color: #0179C5;
     /* background-color: #ffde7c; */
     padding: 15px;
+    cursor: pointer;
     height: 70px;
     width: 70px;
     border-radius: 50% 50% 50% 0%;
+}
+
+section#why-us #container article svg:hover{
+    background-color: #3eb5ff;
 }
 
 
@@ -152,9 +161,9 @@ footer #talk #container {
     justify-content: space-between;
     align-items: center;
     border-radius: 50px;
-    /* box-shadow: -1px -1px 1px lightgrey; */
-    /* border: 1px solid rgb(238, 238, 238); */
-    border: none;
+    box-shadow: -1px -1px 1px #f8fdff;
+    border: 1px solid #f8fdff;
+    /* border: none; */
 }
 
 
@@ -162,6 +171,16 @@ footer #talk #container {
 footer #wrapper a:hover {
     color: rgba(255, 255, 255, 0.5);
 }
+
+section#contact #container form #btn-submit {
+    background:#0006B1 !important;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+
 
 @media(max-width: 992px) {
 
@@ -195,5 +214,34 @@ footer #wrapper a:hover {
         max-width: 500px;
         margin: 0px auto;
         margin-right: 0px;
+    }
+
+    footer #talk {
+        width: 100%;
+        
+    }
+
+    footer #talk #container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer #talk #container .content {
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 500px) {
+    footer #talk {
+        width: 100%;
+        position: absolute;
+        top: -25%;
+        left: 0px;
+    }
+
+    footer #talk #container #btn-action {
+      background: #0006B1;
+        /* background: #ffbf00; */
+        padding: 10px 20px;
     }
 }
