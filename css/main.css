@@ -76,9 +76,9 @@ section#what-we-do #container .box p {
 section#what-we-do #container .box svg{
     /* background-color: #9cdeff; */
     background-color: #e6ecf8;
-    padding: 20px;
-    height: 90px;
-    width: 90px;
+    padding: 15px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
 }
 
@@ -121,7 +121,7 @@ section#why-us #container article svg{
     cursor: pointer;
     height: 70px;
     width: 70px;
-    border-radius: 50% 50% 50% 0%;
+    border-radius: 50% 50% 50% 50%;
 }
 
 section#why-us #container article svg:hover{
