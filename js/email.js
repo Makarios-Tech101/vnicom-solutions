@@ -1,10 +1,12 @@
 window.addEventListener('load', ()=>{
+      emailjs.init("9rg8vIWCamLedyjVd");
     const user_name = document.getElementById('name')
     const user_email = document.getElementById('email')
     const user_phone = document.getElementById('phone')
     const user_project = document.getElementById('project')
     const user_message = document.getElementById('message')
-
+    const btn = document.getElementById("btn-submit");
+    const statusBox = document.getElementById("form-status");
 
     document.getElementById('form').addEventListener('submit', (e)=>{
         e.preventDefault()
@@ -30,21 +32,49 @@ window.addEventListener('load', ()=>{
                             const to = "vnicomhub@gmail.com"
                             const subject = "Vnicom Limited Business Enquires"
                             const body = message_body
-
-                            Email.send({
-                                SecureToken : "47445aa6-2d5e-4a42-b173-6a52b799959f",
-                                To : to,
-                                From : from,
-                                Subject : subject,
-                                Body : body
+                            btn.disabled = true;
+                            btn.innerHTML = "Sending... ⏳";
+                            statusBox.innerHTML = "";
+                            emailjs.send("service_vnicom", "template_4kvk9bs", {
+                                from_name: user_name.value,
+                                email: user_email.value,
+                                phone: user_phone.value,
+                                project: user_project.value,
+                                message: user_message.value
                             })
-                            .then(
-                            message => {
-                                if(message.toLowerCase() == "ok"){
-                                    alert("Message sent")
-                                }
-                            }
-                            )
+                                .then(() => {
+                                btn.disabled = false;
+                                btn.innerHTML = "SUBMIT";
+                                statusBox.innerHTML = `<p class="success"> Message sent successfully!</p>`;
+                                document.getElementById('form').reset();
+                            })
+                            .catch(err => {
+                                btn.disabled = false;
+                                btn.innerHTML = "SUBMIT";
+                                statusBox.innerHTML = `<p class="error"> Failed to send message. Try again later.</p>`;
+                                console.error("EmailJS error:", err);
+                            });
+
+                            // Email.send({
+                            //     SecureToken : "47445aa6-2d5e-4a42-b173-6a52b799959f",
+                            //     To : to,
+                            //     From : from,
+                            //     Subject : subject,
+                            //     Body : body
+                            // })
+                            // .then(
+                            // message => {
+                                // if(message.toLowerCase() == "ok"){
+                                //     alert("Message sent")
+                                // }
+                                // console.log("SMTPJS response:", message)
+                                //     if(message.toLowerCase() === "ok"){
+                                //         alert("Message sent successfully ✅")
+                                //     } else {
+                                //         alert("Failed ❌: " + message)
+                                //     }
+                                // }
+                            // )
                         }
                     }
                 }

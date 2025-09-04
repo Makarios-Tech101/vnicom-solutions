@@ -105,12 +105,29 @@ section#what-we-do #container .box svg{
     background-color: #000230;
 }
 
+section#why-us {
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    top: auto;
+    padding-bottom: 0px;
+}
+
 section#why-us h3 {
     margin-bottom: 0px;
     text-align: right;
     width: 50%;
     margin: 0px auto;
     margin-right: 0px;
+}
+
+
+
+section#why-us #ball {
+    position: absolute;
+    width: 50%;
+    right: 0px;
+    top: 0px;
 }
 
 
@@ -128,8 +145,92 @@ section#why-us #container article svg:hover{
     background-color: #3eb5ff;
 }
 
+main .showcase-section {
+    padding: 5% 10% 5% 10%;
+    margin: 0px;
+    background-color: #F6F9F8;
+    /* background-color: white; */
+}
 
-footer #talk #container #btn-action {
+
+
+main .showcase-container {
+  padding: 0%;
+  margin-top: 5px;
+}
+
+main .showcase-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+main .showcase-grid .vnitpay-container {
+    background-color:white;
+    padding: 30px 30px 30px 30px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+main .showcase-grid .vnitpay-container:hover {
+    background-color: #f8fdff;
+}
+
+main .showcase-grid .turnify-container {
+    background-color: white;
+    padding: 30px;
+     width: 100%;
+    margin-left: 20px;
+    border-radius: 10px; 
+}
+
+main .showcase-grid .turnify-container:hover {
+    background-color: #f8fdff;
+}
+
+main .showcase-grid .vnitpay-container svg {
+    width: 200px;
+}
+
+main .showcase-grid .vnitpay-container h5 {
+    margin: 10px 0px 5px 0px;
+}
+
+main .showcase-grid .turnify-container img{
+    width: 180px;
+    padding-bottom: 5px;
+}
+
+main .showcase-grid .turnify-container h5 {
+    margin: -5px 0px 5px 0px;
+}
+
+main .showcase-grid  p {
+    margin-bottom: 20px;
+}
+
+main .showcase-grid  a {
+    display: inline-block;
+    /* background-color: #0006B1; */
+    color:#0006B1;
+    padding: 10px 0px;
+    border-radius: 5px;
+    /* font-size: 15px; */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+main .showcase-grid  a:hover {
+    transform: scale(1.02);
+}
+
+
+main #talk #container #btn-action {
     background: #0006B1;
     /* background: #ffbf00; */
     padding: 10px 40px;
@@ -141,26 +242,37 @@ footer #talk #container #btn-action {
 
 footer {
     width: 100%;
-    min-height: 70vh;
+    height: 100%;
     background:rgb(5, 0, 45);
     position: relative;
     top: 0px;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: -0px;
 }
 
-footer #talk #container {
+main #talk {
+    width: 100%;
+    position: relative;
+    z-index: 600;
+    margin-top: 70px;
+    /* top: -28%;
+    left: 0px; */
+}
+
+main #talk #container {
     display: flex;
     /* background: #ffffff; */
     padding: 70px 50px;
     width: 80%;
     margin: 0px auto;
-    background-color:#f8fdff;
+    /* background-color:#f8fdff; */
+    background-color:white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 50px;
+    /* box-shadow: -1px -1px 1px #f8fdff; */
     box-shadow: -1px -1px 1px #f8fdff;
     border: 1px solid #f8fdff;
     /* border: none; */
@@ -180,6 +292,18 @@ section#contact #container form #btn-submit {
     color: #ffffff;
 }
 
+#form-status {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+#form-status .success {
+  color: green;
+}
+
+#form-status .error {
+  color: red;
+}
 
 
 @media(max-width: 992px) {
@@ -211,35 +335,69 @@ section#contact #container form #btn-submit {
         margin-bottom: 0px;
         text-align: center;
         width: 100%;
-        max-width: 500px;
-        margin: 0px auto;
+        /* max-width: 500px; */
+        margin: 0px;
         margin-right: 0px;
     }
 
-    footer #talk {
+    
+
+   main #talk {
         width: 100%;
         
     }
 
-    footer #talk #container {
+   main #talk #container {
         display: flex;
         flex-direction: column;
+
     }
 
-    footer #talk #container .content {
+   main #talk #container .content {
         margin-bottom: 40px;
+        text-align: center;
     }
+
+    main .showcase-section {
+        padding: 5% 10% 15% 10%;
+    
+        /* background-color: white; */
+    }
+
+    main .showcase-title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main .showcase-title h2{
+       font-size: 25px;
+    }
+
+    main .showcase-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+    main .showcase-grid .vnitpay-container {
+        text-align: center;
+        padding: 30px;
+        margin: 0px 0px 15px 0px;
+        padding-bottom: 40px;
+    }
+
+    main .showcase-grid .turnify-container {
+        text-align: center;
+         margin: 15px 0px 0px 0px;
+        padding-top: 40px;
+    }
+
 }
 
 @media(max-width: 500px) {
-    footer #talk {
-        width: 100%;
-        position: absolute;
-        top: -25%;
-        left: 0px;
-    }
 
-    footer #talk #container #btn-action {
+   main #talk #container #btn-action {
       background: #0006B1;
         /* background: #ffbf00; */
         padding: 10px 20px;
